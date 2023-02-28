@@ -9,7 +9,7 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: white;
+  background: var(--white-primary);
   transition: all 0.3s linear;
   transform: translate(-100%);
   z-index: 1;
@@ -21,7 +21,7 @@
 }
 
 .sidebar_header {
-  max-width: 50rem;
+  max-width: 62.5rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@
 }
 
 .sidebar_logo svg > * {
-  fill: #fb1;
+  fill: var(--orange-primary);
 }
 
 .sidebar_toggle svg > * {
@@ -65,7 +65,7 @@
 }
 
 .link:hover {
-  border-bottom: 2px solid #fb1;
+  border-bottom: 2px solid var(--orange-primary);
 }
 
 @media (min-width: 800px) {

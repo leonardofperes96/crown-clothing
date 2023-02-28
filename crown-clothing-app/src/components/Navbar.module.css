@@ -10,8 +10,7 @@
 
 .nav_center {
   width: 90vw;
-  max-width: 62.5rem;
-  padding: 1em;
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 
@@ -31,7 +30,11 @@
 .nav_toggle,
 .nav_header svg {
   font-size: 3rem;
-  fill: #fb1;
+  fill: var(--orange-primary);
+}
+
+.nav_logo{
+  margin-right: 0.2em;
 }
 
 .nav_links {
@@ -58,7 +61,7 @@
   }
 
   .link:hover {
-    border-bottom: 2px solid #fb1;
+    border-bottom: 2px solid var(--orange-primary);
   }
 
   .nav_center {

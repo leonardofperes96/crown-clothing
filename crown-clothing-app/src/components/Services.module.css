@@ -1,0 +1,33 @@
+.services_container{
+    margin: 0 auto;
+    padding: 1em;
+    background: #f9d6c0;
+    color: rgba(0,0,0,0.4);
+}
+
+.services_content{
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.services{
+    display: grid;
+}
+
+.service_info{
+    background: white;
+    margin-bottom: 2em;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+.service_info span{
+    background: black;
+    border-radius: 50%;
+    width: 4rem;
+    padding: 0.25em;
+    height: 4rem;
+    color: white;
+    font-size: 2rem;
+}

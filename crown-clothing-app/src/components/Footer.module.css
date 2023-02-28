@@ -1,11 +1,10 @@
 .footer {
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    justify-content: center;
-    background: #fb1;
-    gap: 0.5em;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  justify-content: center;
+  background: var(--orange-primary);
+  color: rgba(0, 0, 0, 0.3);
+  gap: 0.5em;
+  text-align: center;
 }
-
-

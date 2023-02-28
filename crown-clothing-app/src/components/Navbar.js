@@ -5,6 +5,7 @@ import { AiOutlineCrown } from "react-icons/ai";
 import { NavButtons } from "./index";
 import { FaBars } from "react-icons/fa";
 import { useProductsContext } from "../contexts/products_context";
+import { links } from "../utils/helper";
 
 const Navbar = () => {
   const { openSidebar } = useProductsContext();
@@ -13,28 +14,20 @@ const Navbar = () => {
       <div className={styles.nav_center}>
         <div className={styles.nav_header}>
           <Link className={styles.nav_logo} to="/">
-            <AiOutlineCrown/>
+            <AiOutlineCrown />
           </Link>
           <button onClick={openSidebar} className={styles.nav_toggle}>
             <FaBars />
           </button>
         </div>
         <ul className={styles.nav_links}>
-          <li>
-            <Link className={styles.link} to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className={styles.link} to="/about">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link className={styles.link} to="/products">
-              Products
-            </Link>
-          </li>
+          {links.map((link) => (
+            <li key={link.id}>
+              <Link className={styles.link} to={link.url}>
+                {link.pathname}
+              </Link>
+            </li>
+          ))}
         </ul>
         <NavButtons />
       </div>

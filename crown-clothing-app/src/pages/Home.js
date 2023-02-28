@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import { FeaturedProducts, HomeDesign, Services, Contact } from "../components";
 
 const Home = () => {
   return (
-    <div className="page container">
-      Home
+    <div>
+      <HomeDesign />
+      <FeaturedProducts />
+      <Services />
+      <Contact />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

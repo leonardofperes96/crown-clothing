@@ -10,7 +10,7 @@ const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useProductsContext();
 
   return (
-    <div className={isSidebarOpen ? `${styles.sidebar_container}` : ''}>
+    <div className={isSidebarOpen ? `${styles.sidebar_container}` : ""}>
       <aside
         className={
           isSidebarOpen
@@ -23,22 +23,22 @@ const Sidebar = () => {
             <AiOutlineCrown className={styles.icon} />
           </Link>
           <button onClick={closeSidebar} className={styles.sidebar_toggle}>
-            <FaTimes  className={styles.icon} />
+            <FaTimes className={styles.icon} />
           </button>
         </div>
         <ul className={styles.sidebar_links}>
           <li>
-            <Link className={styles.link} to="/">
+            <Link onClick={closeSidebar} className={styles.link} to="/">
               Home
             </Link>
           </li>
           <li>
-            <Link className={styles.link} to="/about">
+            <Link  onClick={closeSidebar}className={styles.link} to="/about">
               About
             </Link>
           </li>
           <li>
-            <Link className={styles.link} to="/products">
+            <Link  onClick={closeSidebar}className={styles.link} to="/products">
               Products
             </Link>
           </li>

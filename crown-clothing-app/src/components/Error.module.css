@@ -1,0 +1,9 @@
+.error_container {
+  padding: 1em;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+.error_container h3 {
+  color: tomato;
+}
