@@ -11,7 +11,7 @@ import {
   GET_SINGLE_PRODUCT_SUCCESS,
 } from "../actions";
 import reducer from "../reducers/products_reducer";
-import { products_url } from "../utils/helper";
+import { products_url } from "../utils/constants";
 
 const ProductsContext = createContext();
 
@@ -48,25 +48,25 @@ export const ProductsProvider = ({ children }) => {
     }
   };
 
-  // const fetchSingleProducts = async (url) => {
-  //   dispatch({ type: GET_SINGLE_PRODUCT_BEGIN });
+  const fetchSingleProducts = async (url) => {
+    dispatch({ type: GET_SINGLE_PRODUCT_BEGIN });
 
-  //   try {
-  //     const response = await fetch(url);
-  //     const single_product = await response.data;
+    try {
+      const response = await axios.get(url);
+      const single_product = await response.data;
 
-  //     dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: single_product });
-  //   } catch (err) {
-  //     dispatch({ type: GET_SINGLE_PRODUCT_ERROR, payload: err.message });
-  //   }
-  // };
+      dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: single_product });
+    } catch (err) {
+      dispatch({ type: GET_SINGLE_PRODUCT_ERROR, payload: err.message });
+    }
+  };
 
   useEffect(() => {
     fetchProducts(products_url);
   }, []);
 
   return (
-    <ProductsContext.Provider value={{ ...state, openSidebar, closeSidebar }}>
+    <ProductsContext.Provider value={{ ...state, openSidebar, closeSidebar, fetchSingleProducts }}>
       {children}
     </ProductsContext.Provider>
   );

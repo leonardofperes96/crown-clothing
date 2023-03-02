@@ -5,7 +5,7 @@ import { AiOutlineCrown } from "react-icons/ai";
 import { NavButtons } from "./index";
 import { FaBars } from "react-icons/fa";
 import { useProductsContext } from "../contexts/products_context";
-import { links } from "../utils/helper";
+import { links } from "../utils/constants";
 
 const Navbar = () => {
   const { openSidebar } = useProductsContext();

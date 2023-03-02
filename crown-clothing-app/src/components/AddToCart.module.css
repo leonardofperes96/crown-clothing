@@ -1,0 +1,36 @@
+.color_container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    gap: 2em;
+}
+
+.color_span{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.color_btn{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5em;
+    cursor: pointer;
+    border: none;
+    opacity: 0.5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+.color_btn svg{
+    font-size: 0.875rem;
+    color: white;
+}
+
+.active{
+    opacity: 1;
+}

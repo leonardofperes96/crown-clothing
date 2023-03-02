@@ -1,0 +1,21 @@
+.hero_container{
+    padding: 2em 1em;
+    margin: 0 auto;
+    background: var(--orange-primary);
+    margin-bottom: 2em;
+}
+
+.hero_content{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+
+.hero_title{
+    color: rgba(0,0,0,0.5);
+}
+
+.hero_span{
+    color: rgba(0,0,0,0.7);
+}
+

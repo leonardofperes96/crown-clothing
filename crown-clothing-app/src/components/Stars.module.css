@@ -1,0 +1,10 @@
+.stars_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.stars_content svg{
+    color: #ffb900;
+}

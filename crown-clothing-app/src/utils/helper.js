@@ -1,32 +1,8 @@
-import { GiCompass, GiDiamondHard, GiStabbedNote } from "react-icons/gi";
+export const formatPrice = (number) => {
+  const newNumber = Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(number / 100);
 
-export const links = [
-  { id: 1, url: "/", pathname: "Home" },
-  { id: 2, url: "/about", pathname: "About" },
-  { id: 3, url: "/products", pathname: "Products" },
-];
-
-export const products_url = "https://course-api.com/react-store-products";
-
-export const single_product_url = `https://course-api.com/react-store-single-product?id=`;
-
-export const services_array = [
-  {
-    id: 1,
-    icon: <GiCompass />,
-    title: "mission",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
-  },
-  {
-    id: 2,
-    icon: <GiDiamondHard />,
-    title: "vision",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
-  },
-  {
-    id: 3,
-    icon: <GiStabbedNote />,
-    title: "history",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
-  },
-];
+  return newNumber;
+};

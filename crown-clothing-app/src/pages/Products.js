@@ -1,9 +1,10 @@
 import React from 'react'
+import { HeroPage } from "../components";
 
 const Products = () => {
   return (
     <div>
-      Products
+       <HeroPage />
     </div>
   )
 }

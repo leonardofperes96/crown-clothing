@@ -17,7 +17,7 @@
 
 .link {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, 50%);
   background: var(--blue-primary);
@@ -49,6 +49,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.product_info p{
+  color: var(--orange-primary);
 }
 
 @media (min-width: 800px){

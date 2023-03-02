@@ -10,6 +10,11 @@ import Contact from "./Contact";
 import LoadingSpinner from "./LoadingSpinner";
 import Error from "./Error";
 import Product from "./Product";
+import HeroPage from "./HeroPage";
+import SingleProductImages from "./SingleProductImages";
+import Stars from "./Stars";
+import AddToCart from "./AddToCart";
+import AmountButtons from "./AmountButtons";
 
 export {
   Navbar,
@@ -23,4 +28,9 @@ export {
   LoadingSpinner,
   Error,
   Product,
+  HeroPage,
+  SingleProductImages,
+  Stars,
+  AddToCart,
+  AmountButtons,
 };

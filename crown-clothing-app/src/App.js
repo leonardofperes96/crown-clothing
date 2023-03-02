@@ -1,6 +1,13 @@
 import { Footer, Navbar, Sidebar } from "./components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { About, Home, Products, Cart, Login } from "./pages/index";
+import {
+  About,
+  Home,
+  Products,
+  Cart,
+  Login,
+  SingleProduct,
+} from "./pages/index";
 
 const App = () => {
   return (
@@ -14,6 +21,7 @@ const App = () => {
           <Route path="/products" element={<Products />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/products" element={<Login />} />
+          <Route path="/products/:id" element={<SingleProduct />} />
         </Routes>
         <Footer />
       </Router>

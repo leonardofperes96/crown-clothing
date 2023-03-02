@@ -1,11 +1,12 @@
 :root {
   --orange-primary: #fb1;
-  --orange-secondary: #e7b77f;
   --white-primary: #fff;
   --transition: all 0.3s linear;
   --max-width: 1000px;
   --blue-secondary: hsl(209, 34%, 30%);
   --blue-primary: #f1f5f8;
+  --light-orange: #ffc289;
+  --dark-orange: #ffb16f;
 }
 * {
   box-sizing: border-box;
@@ -114,4 +115,8 @@ body {
 
 .page {
   min-height: calc(100vh - 10rem);
+}
+
+hr{
+  border: 0.5px solid var(--blue-secondary);
 }
