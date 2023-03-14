@@ -1,5 +1,5 @@
 import { ActionTypes } from "../action-types/actionTypes";
-import { ProductsActions } from "../actions/actions";
+import { ProductsActions } from "../actions/productsActions";
 import {
   initialState,
   ProductsContextType,

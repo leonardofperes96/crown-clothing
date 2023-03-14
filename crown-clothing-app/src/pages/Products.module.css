@@ -1,0 +1,24 @@
+.products_container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.products_content {
+  display: grid;
+  grid-template-columns: minmax(350px, 1fr);
+  justify-content: start;
+  gap: 0.5em;
+}
+
+
+
+@media (min-width: 800px) {
+  .products_content {
+    grid-template-columns: 200px 1fr;
+    justify-content: start;
+    gap: 1em;
+    align-items: start;
+  }
+ 
+}

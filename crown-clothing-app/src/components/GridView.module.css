@@ -1,0 +1,28 @@
+.grid_view {
+  display: grid;
+  margin-top: 1em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  width: 750px;
+  height: 250px;
+  border-radius: 0.25em;
+}
+
+@media (min-width: 800px) {
+  .grid_view {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+    justify-content: space-between;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    width: 400px;
+    height: 200px;
+    border-radius: 0.25em;
+  }
+}

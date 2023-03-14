@@ -1,0 +1,23 @@
+.list_view {
+  display: grid;
+  margin-top: 1em;
+}
+
+.list_view_info {
+  display: grid;
+  grid-template-columns: minmax(350px, 1fr);
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.list_view_info image {
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .list_view_info {
+    grid-template-columns: 300px 1fr;
+    gap: 1em;
+    place-items: center;
+  }
+}
