@@ -14,6 +14,7 @@
     border-radius: 0.25em;
 }
 
+
 .about_body_content{
     padding: 3em 0;
 }
@@ -34,6 +35,7 @@
 
 .about_body{
     line-height: 1.7;
+    margin-top: 1em;
 }
 
 @media (min-width: 800px){

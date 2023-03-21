@@ -1,0 +1,28 @@
+.cart_container {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  width: 90vw;
+  min-height: 65vh;
+}
+
+.cart_options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order {
+  display: flex;
+  max-width: 50%;;
+  margin: 4em auto;
+  justify-content: center;
+
+  border: 1px solid black;
+  border-radius: 0.25em;
+}
+
+@media (max-width: 550px){
+    .order h4{
+        font-size: 0.75rem;
+    }
+  
+}

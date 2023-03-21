@@ -1,3 +1,11 @@
+.margins{
+  margin-bottom: 1em;
+}
+
+.margins h5{
+  margin-bottom: 1em;
+}
+
 .filter_container {
   margin-top: 1em;
 }
@@ -22,12 +30,11 @@
   letter-spacing: 1px;
   color: var(--blue-secondary);
   cursor: pointer;
+  text-transform: capitalize;
 }
 
-.btn_all {
-  border: none;
-  border-bottom: 1px solid black;
-  background: none;
+.filter_category_options button.activex {
+  border-bottom: 1px solid var(--blue-secondary);
 }
 
 .btn_inactive {
@@ -45,21 +52,82 @@
   justify-content: center;
   color: white;
 }
-.btn_inactive svg{
-    font-size: 0.5rem;
-    color: white;
+
+.filter_color_options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.btn_active {
+.all_color_btn {
+  font-size: 1rem;
+  border: none;
+  background: none;
+}
+
+.all_color_btn_active {
+  font-size: 1rem;
+  border: none;
+  background: none;
+  border-bottom: 1px solid var(--blue-secondary);
+}
+
+.color_btn {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #222;
+  margin-right: 0.5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color_btn svg {
+  font-size: 0.75rem;
+  color: white;
+}
+
+.color_btn .color_active {
   opacity: 1;
 }
 
-.category_active {
-  color: red;
-}
-.filter_color_options {
+.color_buttons_options {
   display: flex;
-  gap: 0.5em;
   align-items: center;
-  justify-content: start;
+  gap: 0.25em;
+  text-transform: capitalize;
+}
+
+.filter_company_options select {
+  border: none;
+  padding: 0.25em;
+  font-size: 1em;
+  text-transform: capitalize;
+}
+
+.clear_filters_btn {
+  text-transform: capitalize;
+  padding: 0.5em 1em;
+  background: #fb1;
+  color: white;
+  border-radius: 0.25em;
+  border: 1px solid transparent;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.clear_filters_btn:hover {
+  background: var(--blue-secondary);
+}
+
+@media (min-width: 760px){
+  .filter_container{
+    position: sticky;
+    top: 1em;
+  }
 }

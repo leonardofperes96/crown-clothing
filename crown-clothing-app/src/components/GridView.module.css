@@ -14,7 +14,7 @@ img {
 @media (min-width: 800px) {
   .grid_view {
     grid-template-columns: 1fr 1fr;
-    gap: 0.5em;
+    gap: 1.5em;
     justify-content: space-between;
   }
 

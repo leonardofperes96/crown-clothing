@@ -77,8 +77,8 @@ const SingleProduct = () => {
                 <span>Brand:</span> {company}
               </p>
               <hr />
-              {product && colors &&  stock && stock > 0 && (
-                <AddToCart colors={colors} stock={stock} />
+              {product && stock && colors && productId && stock > 0 && (
+                <AddToCart id={productId} colors={colors} stock={stock} product={product}/>
               )}
             </div>
           </div>

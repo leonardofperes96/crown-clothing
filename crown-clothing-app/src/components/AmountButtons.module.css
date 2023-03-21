@@ -2,11 +2,11 @@
   display: flex;
   align-items: center;
   gap: 1em;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
 }
 
 .amount {
-  font-size: 3rem;
+  font-size: 1.75rem;
   margin: 0;
 }
 
@@ -18,5 +18,25 @@
 }
 
 .amount_button svg {
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 700px) {
+  .amount {
+    font-size: 3rem;
+  }
+
+  .amount_button svg {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px){
+  .amount {
+    font-size: 1.25rem;
+  }
+
+  .amount_button svg{
+    font-size: 0.75rem;
+  }
 }

@@ -16,17 +16,23 @@ const Sort = () => {
   return (
     <div className={styles.sort_container}>
       <div className={styles.sort_buttons}>
-        <button className={`${grid_view ? `${styles.active}` : ""}`}>
-          <BsFillGridFill onClick={setGridView} />
+        <button
+          onClick={setGridView}
+          className={`${grid_view ? `${styles.active}` : ""}`}
+        >
+          <BsFillGridFill />
         </button>
-        <button className={`${!grid_view ? `${styles.active}` : ""}`}>
-          <BsList onClick={setListView} />
+        <button
+          onClick={setListView}
+          className={`${!grid_view ? `${styles.active}` : ""}`}
+        >
+          <BsList />
         </button>
       </div>
       <div>
         <p>{filtered_products.length} Products Found</p>
       </div>
-      
+
       <div className={styles.sort_form_container}>
         <form>
           <label htmlFor="sort">sort by</label>
