@@ -20,6 +20,12 @@
   border-radius: 0.25em;
 }
 
+.options {
+  display: flex;
+  justify-content: center;
+  
+}
+
 @media (max-width: 550px){
     .order h4{
         font-size: 0.75rem;
