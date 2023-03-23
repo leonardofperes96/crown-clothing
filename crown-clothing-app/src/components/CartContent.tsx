@@ -6,16 +6,13 @@ import { CartItem } from "./";
 import { formatPrice } from "../utils/helper";
 import { useAuth0 } from "@auth0/auth0-react";
 
+
 const CartContent = () => {
   const { cart, clearCart, total_amount } = useCartContext();
   const { isAuthenticated, loginWithRedirect } = useAuth0();
 
   const login = (e: React.MouseEvent<HTMLButtonElement>) => {
     loginWithRedirect();
-  };
-
-  const handleBuy = (e: React.MouseEvent<HTMLButtonElement>) => {
-    alert("É apenas um app de demonstração!");
   };
 
   return (
@@ -42,9 +39,9 @@ const CartContent = () => {
       </div>
       <div className={styles.options}>
         {isAuthenticated ? (
-          <button className="button" onClick={handleBuy}>
-            Compre agora
-          </button>
+          <Link to="/checkout" className="button">
+            Buy now
+          </Link>
         ) : (
           <button className="button" onClick={login}>
             Login

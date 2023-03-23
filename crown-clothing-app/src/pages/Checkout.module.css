@@ -1,0 +1,12 @@
+.no_products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 58vh;
+}
+
+.no_products h1{
+    margin-top: 0;
+}
+

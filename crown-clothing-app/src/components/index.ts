@@ -23,6 +23,7 @@ import GridView from "./GridView";
 import ListView from "./ListView";
 import CartContent from "./CartContent";
 import CartItem from "./CartItem";
+import StripeCheckout from "./StripeCheckout";
 
 export {
   Navbar,
@@ -48,4 +49,5 @@ export {
   GridView,
   CartContent,
   CartItem,
+  StripeCheckout,
 };

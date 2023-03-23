@@ -22,6 +22,14 @@ const HeroPage = ({ id, name } : HeroPage) => {
       setTitle("Products");
     }
 
+    if (pathname === "/cart") {
+      setTitle("Cart");
+    }
+
+    if (pathname === "/checkout") {
+      setTitle("Checkout");
+    }
+
     if (pathname === `/products/${id}`) {
       setTitle(`Products / ${name}`);
     }

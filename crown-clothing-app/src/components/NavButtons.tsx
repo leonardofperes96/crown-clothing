@@ -22,7 +22,7 @@ class UserTypes {
 
 const NavButtons = () => {
   const { isSidebarOpen } = useProductsContext();
-  const { total_items } = useCartContext();
+  const { total_items, clearCart } = useCartContext();
   const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
 
   const [myUser, setMyUser] = useState<UserTypes | null>(null);
@@ -62,9 +62,10 @@ const NavButtons = () => {
       ) : (
         <button
           className={styles.cart_btn}
-          onClick={() =>
-            logout({ logoutParams: { returnTo: window.location.origin } })
-          }
+          onClick={() => {
+            clearCart();
+            logout({ logoutParams: { returnTo: window.location.origin } });
+          }}
         >
           Logout <FaUserMinus />
         </button>

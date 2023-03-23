@@ -6,9 +6,11 @@ import { NavButtons } from "./index";
 import { FaBars } from "react-icons/fa";
 import { useProductsContext } from "../contexts/products_context";
 import { links } from "../utils/constants";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = () => {
   const { openSidebar } = useProductsContext();
+  const { isAuthenticated } = useAuth0();
   return (
     <nav className={styles.nav_container}>
       <div className={styles.nav_center}>
@@ -28,6 +30,13 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          {isAuthenticated && (
+            <li>
+              <Link className={styles.link} to="/checkout">
+                Checkout
+              </Link>
+            </li>
+          )}
         </ul>
         <NavButtons />
       </div>
